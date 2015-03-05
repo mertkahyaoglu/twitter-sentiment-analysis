@@ -10,5 +10,5 @@ The project uses Python for parsing, MATLAB for analysis and SQLite database for
 
 ##Proposal
 
-I’m planning to determine how people are feeling when they share something on twitter by analysing their tweets. I’m going to use [Twitter API](https://dev.twitter.com/rest/public) for collecting data for a certain user. Then I’m going to try to extract some information from that data by using simple and effective techniques.
+The aim of the project is to determine how people are feeling when they share something on twitter by analysing their tweets. I’m going to use [Twitter API](https://dev.twitter.com/rest/public) for collecting data for a certain user. Then I’m going to try to extract some information from that data by using simple and effective techniques.
 For example, "Today is a perfect day!" sentence determines that the author feels happy and excited.
