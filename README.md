@@ -19,7 +19,7 @@ For example, "Today is a perfect day!" sentence determines that the author feels
 * Create a [Twitter Developer Application](https://apps.twitter.com/app/new) to be able to use developer API. (Authentication) :white_check_mark:
 * Setup Twitter API library [Tweepy for Python](http://www.tweepy.org/) :white_check_mark:
 * Fetch tweets for a specific user :white_check_mark:
-* Clean data (remove hashtags and mentioned users)
+* Clean data (remove hashtags and mentioned users) :white_check_mark:
 * First Solution: Process data programmatically for extracting emotions
 * Second Solution: Train data and create a model for [openNLP](https://opennlp.apache.org/)
 * Test results
