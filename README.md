@@ -20,6 +20,7 @@ For example, "Today is a perfect day!" sentence determines that the author feels
 * Setup Twitter API library [Tweepy for Python](http://www.tweepy.org/) :white_check_mark:
 * Fetch tweets for a specific user :white_check_mark:
 * Clean data (remove hashtags and mentioned users) :white_check_mark:
-* Detect positive and negative emoticons :white_check_mark:
-* Process data for extracting emotions
+* Detect positive and negative emoticons in a tweet and give them score accordingly :white_check_mark:
+* Group tweets by emoticon score (positive or negative) :white_check_mark:
+* Apply Naive Bayes Classifier algorithm
 * Test results
