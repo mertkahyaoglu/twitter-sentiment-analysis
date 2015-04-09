@@ -1,7 +1,7 @@
 from config import config
-from emoticons import emoticons
+from feelings import emoticons
+from feelings import adjectives
 import tweepy
-import json
 
 # API Authentication
 auth = tweepy.OAuthHandler(config['consumer_key'], config['consumer_secret'])
@@ -21,31 +21,36 @@ def cleanTweets(tweets):
 	    item = ' '.join(word for word in tweet.split() \
 	    	   if not word.startswith('#') and \
 	    	   	  not word.startswith('@') and \
-	    	   	  not word.startswith('http'))
+	    	   	  not word.startswith('http') and \
+	    		  not word.startswith('RT'))
 	    if item == "" or item == "RT":
 	        continue
 	    clean_data.append(item)
 	return clean_data
 
 # Group tweets by emoticon score, positive or negative
-def analyseTweetsByEmoticons(tweets):
+def analyseTweets(tweets):
 	positives = []
 	negatives = []
 	for tweet in tweets:
-		score = 0
-		tokens = tweet.split()
-		for token in tokens:
-			if token in emoticons['positive']:
-				score += 1
-			if token in emoticons['negative']:	
-				score -= 1
-		if score > 0:
+		if analyseByEmoticons(tweet) == 1:
 			positives.append(tweet)
-		elif score < 0:
+		elif analyseByEmoticons(tweet) == -1:
 			negatives.append(tweet)
 	return positives, negatives
 
-# Export as json
+def analyseByEmoticons(tweet):
+	pos_emos = emoticons['positive']
+	neg_emos = emoticons['negative']
+
+	for pe in pos_emos:
+		if pe in tweet:
+			return 1
+	for ne in neg_emos:
+		if ne in tweet:
+			return -1
+	return 0
+
 def export(filename, data):
     with open(filename, "w") as output:
     	for line in data:
