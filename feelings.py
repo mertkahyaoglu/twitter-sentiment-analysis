@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-emoticons = {
+text_emoticons = {
 	"positive": [
 		":)",
 		"(:",
@@ -40,7 +40,28 @@ emoticons = {
 		":|",
 		"=/",
 		"=(",
-		")=",
+		")="
+	]
+}
+
+emoticons = {
+	"positive": [
+		"😘",
+		"😂",
+		"💕",
+		"😍",
+		"❤",
+		"😁",
+		"💙",
+		"💖",
+		"😃",
+		"😜",
+		"😊"
+	],
+	"negative": [
+		"😞",
+		"😤",
+		"😠"
 	]
 }
 
@@ -48,11 +69,11 @@ adjectives = {
 	"positive": [
 		"mutlu",
 		"hoş",
-		"iyi",
 		"müthiş",
 		"şahane",
 		"harika",
-		"süper"
+		"süper",
+		"güzel"
 	],
 	"negative": [
 		"kötü",
@@ -60,6 +81,7 @@ adjectives = {
 		"hüzünlü",
 		"hasta",
 		"korkunç",
-		"berbat"
+		"berbat",
+		"değil"
 	]
 }

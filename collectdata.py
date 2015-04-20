@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import utils
 
-usernames = ['cmylmz','sertaberener', 'DemetAkalin', 'hulyavsar', 'sertaberener', 'gulbenergen', 'MuratBoz', 'Niltakipte']
+usernames = ['sertaberener', 'DemetAkalin', 'hulyavsar', 'sertaberener', 'gulbenergen', 'MuratBoz', 'Niltakipte']
 
 count = 3000
 
