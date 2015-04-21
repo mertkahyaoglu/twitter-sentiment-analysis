@@ -22,5 +22,5 @@ For example, "Today is a perfect day!" sentence determines that the author feels
 * Clean data (remove hashtags and mentioned users) :white_check_mark:
 * Detect positive and negative emoticons in a tweet and give them score accordingly :white_check_mark:
 * Group tweets by emoticon score (positive or negative) :white_check_mark:
-* Apply Naive Bayes Classifier algorithm
+* Apply Naive Bayes Classifier algorithm :white_check_mark:
 * Test results
