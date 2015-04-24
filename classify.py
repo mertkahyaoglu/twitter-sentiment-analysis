@@ -1,6 +1,8 @@
 # coding=utf-8
-from traindata import traindata
+import utils
 import nltk
+
+traindata = utils.getTrainData()
 
 def get_words_in_tweets(tweets):
     all_words = []
@@ -28,5 +30,5 @@ classifier = nltk.NaiveBayesClassifier.train(training_set)
 def classify(tweet):
 	print classifier.classify(extract_features(tweet.split()))
 
-tweet = 'çok iyi hissediyorum :D'
+tweet = 'moralim çok bozuk'
 classify(tweet)

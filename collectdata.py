@@ -7,4 +7,4 @@ count = 3000
 
 for username in usernames:
 	tweets = utils.cleanTweets(utils.getTweets(username, count))
-	utils.export("data/"+username+"-tweets.txt", tweets)
+	utils.export("data/"+username+"-tweets.txt", tweets, "w")

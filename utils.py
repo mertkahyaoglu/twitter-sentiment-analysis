@@ -4,6 +4,7 @@ from feelings import emoticons
 from feelings import text_emoticons
 from feelings import adjectives
 import tweepy
+import os
 
 # API Authentication
 auth = tweepy.OAuthHandler(config['consumer_key'], config['consumer_secret'])
@@ -31,7 +32,7 @@ def cleanTweets(tweets):
 	return clean_data
 
 def groupTweets(tweets):
-	positives, negatives, neutral= [], [], []
+	positives, negatives = [], []
 
 	for tweet in tweets:
 		score = classify(tweet)
@@ -39,9 +40,7 @@ def groupTweets(tweets):
 			positives.append(tweet)
 		elif score < 0:
 			negatives.append(tweet)
-		else:
-			neutral.append(tweet)
-	return positives, negatives, neutral
+	return positives, negatives
 
 #rule-based
 def classify(tweet):
@@ -81,8 +80,23 @@ def classify(tweet):
 				score -= 5
 	return score
 
+def getTrainData():
+	positives, negatives, traindata = [], [], []
+	for filename in os.listdir("train"):
+	    if filename == "positives.txt":
+		    with open('train/'+filename) as f:
+			    positives = [(tweet, 'positive') for tweet in f.readlines()]
+	    if filename == "negatives.txt":
+		    with open('train/'+filename) as f:
+			    negatives = [(tweet, 'negative') for tweet in f.readlines()]
 
-def export(filename, data):
-    with open(filename, "w") as output:
+	for (words, sentiment) in positives + negatives:
+		words_filtered = [e for e in words.split() if len(e) > 2]
+		traindata.append((words_filtered, sentiment))
+
+	return traindata
+
+def export(filename, data, p):
+    with open(filename, p) as output:
     	for line in data:
-        	output.write(line+'\n')
+        	output.write(line)
