@@ -1,6 +1,6 @@
 # Determine Feelings on Twitter
 
-> Category: Sentiment Analysis
+> Slides available at [slides.com](https://slides.com/mertkahyaoglu/twitter-sentiment-analysis)
 
 ##Requirements
 
