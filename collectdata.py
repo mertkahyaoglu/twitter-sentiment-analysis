@@ -3,7 +3,7 @@ import utils
 
 usernames = ['sertaberener', 'DemetAkalin', 'hulyavsar', 'sertaberener', 'gulbenergen', 'MuratBoz', 'Niltakipte']
 
-count = 3000
+count = 200
 
 for username in usernames:
 	tweets = utils.cleanTweets(utils.getTweets(username, count))

@@ -2,7 +2,7 @@
 import utils
 import nltk
 
-traindata = utils.getTrainData()
+data = utils.getTrainData()
 
 def get_words_in_tweets(tweets):
     all_words = []
@@ -15,20 +15,20 @@ def get_word_features(wordlist):
     word_features = wordlist.keys()
     return word_features
 
-word_features = get_word_features(get_words_in_tweets(traindata))
+word_features = get_word_features(get_words_in_tweets(data))
 
 def extract_features(document):
     document_words = set(document)
     features = {}
     for word in word_features:
-        features['contains(%s)' % word] = (word in document_words)
+        features[word.decode("utf8")] = (word in document_words)
     return features
 
-training_set = nltk.classify.apply_features(extract_features, traindata)
+allsetlength = len(data)
+training_set = nltk.classify.apply_features(extract_features, data[:allsetlength/10*8])
+test_set = data[allsetlength/10*8:]
 classifier = nltk.NaiveBayesClassifier.train(training_set)
 
 def classify(tweet):
 	print classifier.classify(extract_features(tweet.split()))
 
-tweet = 'moralim çok bozuk'
-classify(tweet)
