@@ -1,0 +1,167 @@
+@relation twitter-sentiment-analysis
+@attribute tweet string
+@attribute sentiment {positive,negative}
+
+@data
+"Finaller çok kötü geçiyor", negative
+"Güzel Ülkem ne olursa olsun 75 milyon kardeşin ışığı bol olsun, savaş değil bu , beraber yaşıyoruz , beraber yaşayacağız , beraber öleceğiz..", positive
+"Her ayrılık bir kurşun yarası Her ayrılık iki dünya arası yürek delik deşik öldürmüyor bu şerefsiz üstelik", negative
+"Ya yeter artık ama nereye kadar bu hitler", negative
+"Bunları yazanlardan daha kaprisli ve kibirli bir insan da yoktu çevrede", negative
+"Heralde yalnızım yine uzunca bir süre", negative
+"İyi ki doğdun yol arkadaşım", positive
+"Boğazım düğümleniyor çok üzgünüm Güle güle Kayahan abi Cennet olsun mekanın", negative
+"Baharla gelsin güzel olan iyi olan hayırlı olan herşey. Nevruz kutlu mutlu olsun.", positive
+"Final projeleri çok zevkli", positive
+"bazen hiç  gecenin ikisi gibi değil gereksiz bir dinçlik hangi odayı toplasam ya da mutfakta bi dolansam mı türevi mânâsızlık hali", negative
+"ağlayan çocuğu dövesim geldi", negative
+"memleketimiz hüzünlü bizlere yapacak çok şey düşüyor instagram da sırf yorum yapmak için pusuda…", negative
+"21 mart dünya farkındalık günü down sendromu bir hastalık değil genetik…", negative
+"tutuldu mu bu güneş tutarız biz tutulmadıysa", negative
+"güncel değil genel çözüm gerekli bu mercii nin başındakileri son derece yetersiz buluyorum", negative
+"avustralya akademi Ödülleri en iyi yardımcı erkek oyuncu bu öle böyle bir başarı değil darısı oskar a tebrikler Üstad", negative
+"bu gece 00:00 da burada laf Çok da mesut yar ın konuğuyuz biraz geç evet ama güç değilberaber miyiz", negative
+"bu kafada değil seni evi bile zor bulurum  İki medeni insanız biz", negative
+"özür dilerim özür dilerim özür dilerim", negative
+"yeni yila ucak icinde mi girecegiz acaba tum ekip 13:00 ucagi ariza yapti geri donduk hala izmir e…", negative
+"tam da ucus havasi", negative
+"moralim çok bozuk", negative
+"haziranda okullarin kapancagina değil de albumunun cikcagina seviniyorum o kadar merak ve heycan iç…", negative
+"ya evde salya sumuk pek bi kotu olduk ruya olsn bitsin gtsin tammam iyi dizii valllahide billahii", negative
+"serenayin babasini taniyan varsa bizden bi selam ya aglicam sinirim bozuldu", negative
+"gülben ergen berbat; oğuzhan koç - aşkla değil geri adım atmak hiç bana değil", negative
+"fena değil", negative
+"bu günlerde hiç dinlenemiyorum", negative
+"rezalet bir yemek daha!!", negative
+"moralim yine çok bozuk", negative
+"Turabi ne kadar kötü bir insansın", negative
+"Yeni Whatsapp arayüzü pek mi bi güzel olmus n", negative
+"Filmleri ile büyüdüğümüz bir usta oyuncuyu daha kaybettik. Başımız sağolsun. Mekanın cennet olsun Zeki Alasy", negative
+"Yüzsüzdür insanoğlu kimse bilmez kendini; kime iyilik yaptıysan, ondan koru kendini", negative
+"alla şimdi dışarı çıkıp senin havan kime diye şu fırtınaya bağırıp sonra kendimi ascam hem sinav falan derdim de kalma", negative
+"Sonuçta vasat olan bir film bu beklenti yüzünden bumuymuş dedirtiyor", negative
+"Kötü ve zaman kaybı,izlediğime pişmanım hiç değil ve çok gereksiz kanlı sahneler var", negative
+"hunharca ağlamak istiyorum", negative
+"Aklına gelen bana birşey aldırıyor sinir oluyorum ya deli galiba bunlar araba,ev,saat yeter ya", negative
+"Zumrecilik tam bir zehirsin cahilin ilaci kurnazin sopasısın git burdan çabuk", negative
+"bu otobüsler neden çok kötü kokuyor", negative
+"Demokrasimiz vasat, hak ve özgürlükler konusunda sorunlar var, hukuk devleti askıda, ekonomik büyüme durdu, hakça paylaşım yok.", negative
+"İbret alınacak durum mercedes'in iadesi değil, bu madenci abimizin sözleridir", negative
+"Zulmünüz artarak devam etsin ki, saltanatınızın yıkılışı daha hızlı olsun.", negative
+"Bilmemek değil,küfür etmemek ayıptır", negative
+"artık geceleri uyuyamıyorum", negative
+"Yeter bu kadar Salı günü. Bitsin artık", negative
+"Verem ettiniz kan kusturdunuz  takımı..Yeter be yeter", negative
+"lan elimde olsa sesine bile sarılırdım tarzı tivit atarsam bi gün acımasızca sövün bana oldu mu?", negative
+"Emre Belözoğlu'na saldıran arkadaşı kınıyorum ulan insan bi haber verir biz de gelirdik!", negative
+"Yıllarca sevgilisi olmamış kızlar gibi tribe girdim yolda el ele birini görsem dalasım geliyor Bana aşk lazım", negative
+"Her sene olduğu gibi bu sene de yalnız bitirdim koca bir yılı.  Galiba yanlış en başta.  Şanssız doğmak benim suçum değil kardeş", negative
+"başım ağrıyor", negative
+"uf aman neyse boşverin görmeyin", negative
+"Her şeyi zamana bırakmaktan yoruldum. Gidip birilerini dövmek, birilerinin yüzüne tükürmek", negative
+"İnsan olun azcık insan ! Ama dolu insan olun boş insanlara bu lafımda !", negative
+"Bir kadını sokak ortasında dövebilir, hatta öldürebilirsin. Ama öpersen toplum buna tepki gösterir. Çünkü değerleri olan bir toplumuz.", negative
+"Bugün yediğimiz pidelerin tadı berbat", negative
+"Maalesef bana işlemiyor bu tripler", negative
+"Of kafam çok karışık falcıma fal baktırsam da yine bütün hayatıma öyle yön versem", negative
+"Her yaz geldiğinde aynı gerginliği yaşıyorum İstanbul için o çok kısa,bunun içi görünüyor,şunun göbeği açık.Allah cezamı abimlerle vermiş", negative
+"Eskiden kardeşim dediğim insandan nasıl nefret edilirmiş onu da gördüm bu hayatta.", negative
+"Benim inançlarım azalarak bitti hep acı bak.", negative
+"Annemi bu sene son görüşüm diye hüzünlendim az önce.Duygusal anlar yaşıyorum", negative
+"Kimse benimle ilginlenmesin sevmesin istiyorum ilgi üstümden gidince de moralim bozuluyor 5 yaşındaki çocuk benden daha akıllı", negative
+"Zaten sinirli bi insanım uykusuz olunca daha da sinirleniyorum.Bi kaç sene uyusam pamuk gibi olurum nur falan iner yüzüme", negative
+"Belirli aralıklarla herkesten nefret ediyorum, hani ayda 2 3 kez falan diyebiliriz.", negative
+"Bilen bilir tüm kötü olaylara karşı duruşum ya büyü var ya nazar var şeklindedir çünkü nazar var", negative
+"Moraller bozuk ses kes", negative
+"Ya da balkona çık bağır bağırabildiğin kadar zehir dışarı akmadan yürek yıkanmıyor", negative
+"Hava çok sıcak diye ağladım az önce. Hönkür hönkür", negative
+"bu kadar iğrenç kokan bir çorap olamaz", negative
+"hayat zor", negative
+"Herkes ölür Kimisi toprağa Kimisi yüreklere gömülür", negative
+"Hasta olurum diye denize bile girmeden Istanbul'a gelen ama sinav arifesi salya sümük hasta olan enayi", negative
+"Yok böyle bi uyuzluk gıcıklık", negative
+"seni tanıdığıma çok pişmanım", negative
+"Hayat ne kadar garip ve zor aslında", negative
+"o ananın gözyaşlarında boğulacaksınız katiller", negative
+"heyecanlısın yerinde duramıyorsun karşındaki gayet geniş sakin ve rahat, sev ben de özledim", positive
+"kısmetse bugün görüşüyoruz", positive
+"harika", positive
+"yeteneğin çiçeği", positive
+"İyi yayınlar kralpop radyo", positive
+"ne olursa olsun gülmeye devam", positive
+"bu kadar yakışıklı ve yetenekli olmasaydin kardes", positive
+"yeni yılın ilk bölümü", positive
+"ben fifa'cıyım İrem'cim ama olabilir onu da oynadık zamanında sen futbol oynuomusun bir maç yapalım biara", positive
+"süper harika", positive
+"babamın arabasını kaçırıcam dolaşırız dediğin bu muydu  seanslar için tıkla: h…", positive
+"ben yorgun seyyahım sen güzel siyahım", positive
+"teşekkürler çok mutlu oldum adilcan bey", positive
+"ahmedimin 8 senedir birlikte çalıştıgıım yol arkadasımın oğlu oldu hoş geldin duha bebek allah…", positive
+"İşte eğlenceli bir kesit  yoksa siz hala izlemediniz mi İşte seanslar: htt…", positive
+"bir güzel adam doğmuş bugün iyi ki doğmuşsun sonerimdostumarkadasımkardeşim", positive
+"manga efsanesiniz klip kızı yaptiniz beni sonunda", positive
+"hadi inşallah dedik geldik :d harikaydınız", positive
+"İstiklal caddesi'nde ve keyifli kamera arkası görüntülerini ilk kez izlemeye ne dersiniz h…", positive
+"canım bnm teşekkür ederim", positive
+"teşekkürler", positive
+"son yıllrda izlediğm en eğlencli filmlerdn biriydi teşekkrler biz teşekkür ederiz", positive
+"dedenin nesi  ve başrolünde yer aldığı hadi İnşallah sinemalarda seni bekliyor", positive
+"estafurullah Çok teşekkür ederim günay'cım o senin ruhunun güzelliği", positive
+"İnsanın hayatında sadece bir kere yaşayabileceği bir mucize vardır ya hani", positive
+"filmi bırakıp mikrofonu görünce şarkı söylemeye başlayan ben", positive
+"hadi İnşallah Üçüncü günümüz maşallahımız var", positive
+"mutlu pazarlar  filmine gitmek için harika bir gün İşte seanslar:", positive
+"kardeşim sen ne özel ne güzel bi adamsın Çoook teşekkür ederiz hadi dön de beraber izleyelim", positive
+"pucca pekmez ile mutlu olabilecek mi", positive
+"cumartesi günü yapılacak en güzel şey anneli kızlı izlemek sabırsızlanıyoruz yerim", positive
+"seansını bekliyoruuuu sonunda izlicemm çok heyecanlıyım iyi seyirler", positive
+"aşkının yanısıra kopardı beni", positive
+"canım arkadaşım murat boz un rol aldığı hadi inşallah filmi bugün vizyona giriyor başarılı olacağından eminim", positive
+"ve var sakın kaçırmayın", positive
+"aylardr bugünü bekledim İzlemelere doyamadm şahane bir film olmş herkesn emeğine sağlk", positive
+"hadi İnşallah bu gün vizyondaŞöyle güzel bir film olsada izlesekdiyenlere#hadiinsallah", positive
+"göz bebeğimiz hadi İnşallah bugün vizyon'a girdi sizler kadar bizler de fena heyecanlıyız  hepinize iyi seyirler", positive
+"artık bilemiyoruz dalkılıçcığımız azcık kızgınız sana", positive
+"onlarla aynı kadroda bulunmaktan gurur mutluluk ve şeref duyduğumfilmimizi izledikten sonra…", positive
+"elmanın yarısı gün içinde sık sık ekranlarında izleyebilirsiniz İyi yayınlar", positive
+"bayıldım bu ise ben süpersiniz ne mutlu bize", positive
+"bunu senden duymak büyük mutluluk ahmet", positive
+"Çok teşekkürler Şahin geldiniz çok mutlu ettiniz", positive
+"maximum özen ve hassasiyetle çalıştığım çabaladığım içinde bulunmakdan mutluluk duyduğum güzel filmim…", positive
+"pastırma sıcaklarını yakaladıkmı yollardayız mustafa hocamla  motosikletkocumustafatekin", positive
+"Ülkemizde telifle zengin olan birisi henüz görülmedi ama bizim için en değerli olan şey sevginizi", positive
+"güzel işler yapıyor bu çocuklar takip et ettir", positive
+"güzel dergi çooook kafa dengi", positive
+"mutlu bayramlar", positive
+"canlarım ilk göz ağrılarım iyi ki geldiniz çok mutlu ettiniz sizi seviyorum", positive
+"bu adamlar nereye bakıyor", positive
+"cansın güzel yürekli demom", positive
+"haha alemsin Önder ya", positive
+"adamsınız hem de 3 adam", positive
+"yeniden merhaba ve hoşgeldin oğuzhan", positive
+"hadi bakalım )) mükemmel", positive
+"o senin kalbinin güzelliği demom", positive
+"özleyenler icin", positive
+"yapinca oluyor turkiye'nin en buyuk dijital kadin korosunu kurduk:", positive
+"bostancı gosteri merkezi konserinden", positive
+"ne yaparsaniz kz gibi yapin diye", positive
+"haydi iyi", positive
+"az sonra programında canlı yayındayım sevgiler", positive
+"yarin sabah saat 10da cnnturk'te hakan celik'in programinda canli yayindayim bulusursak sarki soyliycem", positive
+"kapagi da boyleydivallahi emegi gecen herkese tesekkurler ve herkese de mutlu yillar", positive
+"eve gelen cikolataya inanasim gelmiyor tesekkurler poll production", positive
+"o gece calinan butun o harika film sarkilari icinde yer almak cok mutlu etti bendenizi", positive
+"teşekkürler", positive
+"güzel bir habere uyanmak", positive
+"Güzel haberlerle buluşmak üzere sizi sevgiyle selamlıyorum Kendinize iyi bakın.", positive
+"çok beğendik be abi!!", positive
+"Buralar mükemmel ya", positive
+"Bekliyoruz işte heyecanla", positive
+"bir zafer ve herşey ! Kutlu olsun", positive
+"20 yılı devirdik daha nice 20 yıllara dost", positive
+"Dostlar en değerli hazinenizdir", positive
+"ağlamak istiyorum", negative
+"bu ülke nereye gidiyor", negative
+"Keşke Şuan sinirli yaklaşmayın butonum olsa", negative
+"Atatürk'ü sevmeyen kadınların bugün oy kullanmaya gitmesi de ayrı ilginç", negative
+"sabah erken kalkmayı hiç sevmiyorum", negative
