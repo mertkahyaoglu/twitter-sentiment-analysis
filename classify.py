@@ -32,3 +32,4 @@ classifier = nltk.NaiveBayesClassifier.train(training_set)
 def classify(tweet):
 	print classifier.classify(extract_features(tweet.split()))
 
+classify("Bugün çok güzel bir gün")
