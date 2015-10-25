@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 from config import config
-from feelings import emoticons
-from feelings import text_emoticons
-from feelings import adjectives
 import tweepy
 import os
 
