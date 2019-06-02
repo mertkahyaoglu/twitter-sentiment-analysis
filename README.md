@@ -1,7 +1,7 @@
 # Determine Feelings on Twitter
 The aim of the project is to determine how people are feeling when they share something on Twitter. The program classifies only Turkish tweets.
 
-> Check out NodeJS web application [here](http://tsa-webapp.herokuapp.com/)
+> Check out NodeJS web application [here](https://twitter-sentiment-analysis.now.sh/)
 
 > Slides - [NLTK version](https://slides.com/mertkahyaoglu/twitter-sentiment-analysis), [Weka version ](http://slides.com/mertkahyaoglu/twitter-sentiment-analysis-4)
 
